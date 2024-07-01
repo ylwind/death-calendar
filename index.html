@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Calendar</title>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <h1>Death Calendar</h1>
+    <table id="table_input">
+        <tr>
+            <td><label for="birth_input">Birth:</label></td>
+            <td><input id="birth_input" type="date" value="1990-01-01" min="1900-01-01" max="2200-12-31"/></td>
+        </tr>
+        <tr>
+            <td><label for="death_age">Age at Death:</label></td>
+            <td><input id="death_age" type="number" value="60" min="1" max="200"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input id="submit" type="button" value="Refresh"></td>
+        </tr>
+    </table>
+    <table id="year_table"></table>
+</body>
+</html>
